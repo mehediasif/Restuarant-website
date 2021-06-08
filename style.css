@@ -433,7 +433,7 @@ review1:not(:last-child){
     background-color: rgb(15, 15, 15);
     text-align: center;
     width: 100%;
-    padding: 3rem 0;
+    padding: 1rem 0;
     font-size: 1.6rem;
 }
 
