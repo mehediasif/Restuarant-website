@@ -184,7 +184,19 @@ body{
     width: 100%;
     background-size: cover;
     background-position:left;
+}
+
+.img1{
     background-image: url("img/kebab-bulka.jpg.jpg");
+}
+.img2{
+    background-image: url("img/rollo-kebab.jpg");
+}
+.img3{
+    background-image: url("img/kebab talesz.jpg");
+}
+.img4{
+    background-image: url("img/mega talesz.jpg");
 }
 .menu-container{
     width: 100%;
@@ -405,4 +417,297 @@ review1:not(:last-child){
 }
 .review-star .checked{
     color: green;
+}
+/* FOOTER */
+
+.footer{
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+.footer-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(15, 15, 15);
+    text-align: center;
+    width: 100%;
+    padding: 3rem 0;
+    font-size: 1.6rem;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: black;
+    height: 100%;
+    text-transform: uppercase;
+}
+
+.footer-title{
+    font-size: 2.3rem;
+    justify-content: space-around;
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+
+.links{
+    margin: 0 auto;
+    padding: 5rem 0;
+    font-size: 1.8rem;
+    width: 80%;
+}
+
+.list{
+    margin-top: 2rem;
+    list-style: none;
+    text-align: center;
+}
+
+
+
+.list-link:visited,
+.list-link:link{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.list-item{
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.list-item:hover{
+    background-color: #da6b1d;
+    transform: scale(1.05) rotate(5deg);
+}
+
+.media{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links .fa{
+    padding: 3rem;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin{
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube{
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.disclaimer {
+    text-transform: initial;
+    margin-top: 2rem;
+    text-align: center;
+    display: inline-block;
+}
+
+@media screen and (max-width:1300px){
+    .menu-grid{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .price{
+        margin-top: 0;
+    }
+    .menu .container{
+        padding: 0;
+    }
+
+    .links .fa{
+        padding: 2rem;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1130px){
+    .toggle{
+        display: inline-block;
+    }
+    .navbar-list{
+        position: absolute;
+        top: 110px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 85vh;
+        width: 50%;
+        transform: translateX(100%);
+        background-color: black;
+        transition: all .4s ease-in-out;
+    }
+
+    .navbar-item{
+        width: 100%;
+        text-align: center;
+    }
+
+    .right-img{
+        display: none;
+    }
+
+    .contact-form{
+        padding: 0;
+    }
+
+
+}
+
+.nav-active{
+    transform: translateX(0);
+}
+
+@media screen and (max-width:1000px){
+    .menu-grid{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .contact-content{
+        flex-direction: column-reverse;
+    }
+
+    .left{
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .right{
+        border-radius: 0;
+    }
+
+    .review1{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .review1 > *{
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width:800px){
+    .footer-content{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .review{
+        padding: 6rem;
+    }
+}
+
+@media screen and (max-width:600px){
+    .menu-grid{
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .price{
+        margin-top: 5rem;
+    }
+
+    .heading-primary{
+        font-size: 5rem;
+    }
+
+    #restaurant{
+        font-size: 6rem;
+    }
+    .lead{
+        font-size: 1.6rem;
+    }
+
+    .review1{
+        padding: 3rem .5rem;
+    }
+
+    .review-heading{
+        font-size: 3rem;
+    }
+
+    .contact{
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width:450px){
+    #restaurant{
+        font-size: 4rem;
+    }
+
+
+    .heading-primary{
+        font-size: 3rem;
+    }
+
+    .review{
+        padding: 6rem 2rem;
+    }
+
+    .price{
+        margin-top: 2rem;
+    }
+
+    .heading-tertiary{
+        font-size: 2.5rem;
+    }
+
+}
+
+@media screen and (max-width:400px){
+    .menu{
+        padding: 10rem 1rem;
+    }
+
+    .lead{
+        font-size: 1.4rem;
+    }
+
+    .review-box{
+        font-size: 1.3rem;
+    }
+
+    .menu-heading{
+        font-size: 7rem;
+    }
 }
